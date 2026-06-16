@@ -24,3 +24,30 @@ This project is a lightweight, end-to-end ETL pipeline designed to extract Googl
 To run this project locally, ensure you have Python 3 installed and the following libraries:
 ```bash
 pip install google-cloud-bigquery pandas gspread db-dtypes google-auth
+
+
+Note: A GCP Service Account JSON key is required for authentication (darkrooms-task-***.json). Ensure the service account has BigQuery Admin and Google Sheets API editing permissions.
+
+🚀 Execution Order
+To reproduce the pipeline, execute the scripts in the following order:
+
+Extract & Load Raw Data:
+
+Bash
+python Raw_Data_Ingestion.py
+Run Transformations:
+
+Bash
+python transform_daily_metrics.py
+python transform_weekly_metrics.py
+python transform_product_metrics.py
+Export to Google Sheets:
+
+Bash
+python export_to_sheets.py
+📊 Final Deliverables
+Google Sheets Report: [Insert Your Google Sheet Link Here]
+
+(The sheet contains Daily Metrics, Weekly Metrics, and Product Metrics tabs and is publicly viewable).
+
+Production Design: Please refer to the attached System_Design document for Part 5 of the assignment.
