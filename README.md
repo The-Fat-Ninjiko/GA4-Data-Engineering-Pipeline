@@ -13,7 +13,7 @@ This project is a lightweight, end-to-end ETL pipeline designed to extract Googl
 * **Cloud Infrastructure:** Google Cloud Platform (GCP)
 
 ## 📂 Project Structure
-* `Raw_Data_Ingestion.py`: Extracts raw GA4 data iteratively (using `_TABLE_SUFFIX` for optimal bulk loading) and creates the partitioned `raw_ga4_events` table.
+* `Raw_Data_Ingestion_TABLE_SUFFIX.py`: Extracts raw GA4 data iteratively (using `_TABLE_SUFFIX` for optimal bulk loading) and creates the partitioned `raw_ga4_events` table.
 * `transform_daily_metrics.py`: Computes daily aggregated metrics (Revenue, Orders, Customers, Traffic).
 * `transform_weekly_metrics.py`: Computes weekly aggregated metrics ensuring daily reconciliation.
 * `transform_product_metrics.py`: Flattens the nested item arrays using `UNNEST` to calculate product-level performance (Revenue & Quantity).
