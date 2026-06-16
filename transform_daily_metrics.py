@@ -2,7 +2,7 @@
 import os
 from google.cloud import bigquery
 
-#credentials
+#credentials 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "darkrooms-task-41859b8ff948.json"
 client = bigquery.Client()
 
