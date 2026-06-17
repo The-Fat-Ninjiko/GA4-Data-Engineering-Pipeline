@@ -28,13 +28,13 @@ This project is a lightweight, end-to-end ETL pipeline designed to extract Googl
 To run this project locally, ensure you have Python 3 installed and the following libraries:
 
 ```bash
-pip install google-cloud-bigquery pandas gspread db-dtypes google-auth
+pip3 install google-cloud-bigquery pandas gspread db-dtypes google-auth
 
 ```
 
 Note: A GCP Service Account JSON key is required for authentication (darkrooms-task-\*\*\*.json). Ensure the service account has BigQuery Admin and Google Sheets API editing permissions.
 
-#🚀 Execution Order
+##🚀 Execution Order
 To reproduce the pipeline, execute the scripts in the following order:
 
 #Extract & Load Raw Data:
