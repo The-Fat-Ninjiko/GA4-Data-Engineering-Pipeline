@@ -39,9 +39,7 @@ To reproduce the pipeline, execute the scripts in the following order:
 
 #Extract & Load Raw Data:
 
-```python3.11 Raw_Data_Ingestion_TABLE_SUFFIX.py
-
-```
+```python3.11 Raw_Data_Ingestion_TABLE_SUFFIX.py```
 
 #Run Transformations:
 
